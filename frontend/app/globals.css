@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply text-gray-600 hover:text-blue-600 transition-colors;
+  }
+}
+
+.bg-body {
+  background-color: #F9F9F9;
+}
+
+@layer utilities {
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Custom Range Input Styles */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: #e5e7eb;
+  border-radius: 2px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #2563eb;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #2563eb;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #e5e7eb;
+  border-radius: 2px;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 4px;
+  background: #e5e7eb;
+  border-radius: 2px;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
